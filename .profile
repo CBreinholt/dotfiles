@@ -9,6 +9,7 @@
 
 # Folder location
 export DOTDIR="${XDG_DESKTOP_DIR:-$HOME}/source/repos/dotfiles.git"
+export UVUDIR="${XDG_DESKTOP_DIR:-$HOME}/uvu"
 export BASHDIR="${XDG_CONFIG_HOME:-$HOME/.config}/bash"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"

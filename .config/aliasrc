@@ -27,6 +27,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+# cd into uvu dir
+alias uvu='cd $UVUDIR'
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias cp="cp -v"
 alias mv="mv -iv"
