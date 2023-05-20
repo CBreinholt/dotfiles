@@ -7,13 +7,18 @@
 # Add `~/.local/bin` to $PATH if it's not already there
 [[ -z $(echo $PATH | grep $HOME/.local/bin) ]] && export PATH="${PATH}:$HOME/.local/bin/"
 
-# Folder location
+# Folder locations
 export DOTDIR="${XDG_DESKTOP_DIR:-$HOME}/source/repos/dotfiles.git"
 export UVUDIR="${XDG_DESKTOP_DIR:-$HOME}/uvu"
 export BASHDIR="${XDG_CONFIG_HOME:-$HOME/.config}/bash"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export INPUTRC="${XDG_CONFIG_HOME:-$HOME/.config}/inputrc"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
+export TEXMFHOME="${XDG_DATA_DIR:-$HOME/.local/share}/texmf"
+export TEXMFVAR="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/var"
+export TEXMFCONFIG="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/config"
+#export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
+
 export LESSHISTFILE="-"
 
 # Password store
