@@ -73,5 +73,8 @@ esac
 # Enable git completion
 eval "$(gh completion -s bash)"
 
+# Enable pandoc completion
+eval "$(pandoc --bash-completion)"
+
 # Enable tab completion when using sudo
 [ "$PS1" ] && complete -cf sudo
