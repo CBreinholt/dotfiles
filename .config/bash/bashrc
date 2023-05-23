@@ -11,7 +11,7 @@
     source "${XDG_CONFIG_HOME:-$HOME/.config}/aliasrc"
 
 # Source file for adding git to shell prompt
-. ~/.config/git/git-prompt.sh
+source ~/.config/git/git-prompt.sh
 
 # History settings
 HISTFILE="${XDG_CONFIG_HOME:-$HOME/.config}/bash/bash_history"
