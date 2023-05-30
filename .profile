@@ -25,7 +25,7 @@ export LESSHISTFILE="-"
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 
 # Default programs
-export BROWSER="brave"
+#export BROWSER="brave"
 export EDITOR="vim"
 
 # Load the shell configs
