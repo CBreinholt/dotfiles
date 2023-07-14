@@ -76,5 +76,10 @@ eval "$(gh completion -s bash)"
 # Enable pandoc completion
 eval "$(pandoc --bash-completion)"
 
+# Enable oh-my-posh and its completion and load the shell theme
+eval "$(oh-my-posh init bash --config /c/Users/Christopher/Documents/PowerShell/nord_1.omp.json)"
+eval "$(oh-my-posh completion bash)"
+
 # Enable tab completion when using sudo
 [ "$PS1" ] && complete -cf sudo
+
