@@ -3,7 +3,7 @@
 
 # Path to your zsh configs and oh-my-zsh installation.
 export ZDOTDIR="$HOME/.config/zsh"
-export ZSH="$ZDOTDIR/ohmyzsh"
+export ZSH="$HOME/.config/zsh/ohmyzsh"
 
 # User configuration
 export MANPATH="/usr/local/man:$MANPATH"
@@ -16,7 +16,7 @@ export ARCHFLAGS="-arch x86_64"
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias zshconfig="nvim $ZDOTDIR/.zshrc"
+#alias zshconfig="nvim $HOME/.config/zsh/.zshrc"
 alias ohmyzsh="$HOME/.config/zsh/ohmyzsh/oh-my-zsh.sh"
 
 # Set name of the theme to load --- if set to "random", it will

@@ -23,7 +23,7 @@ HISTCONTROL=ignoreboth
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Setup oh-my-posh shell
