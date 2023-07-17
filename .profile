@@ -18,7 +18,6 @@ export TEXMFHOME="${XDG_DATA_DIR:-$HOME/.local/share}/texmf"
 export TEXMFVAR="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/var"
 export TEXMFCONFIG="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/config"
 #export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
-
 export LESSHISTFILE="-"
 
 # Password store
@@ -26,12 +25,12 @@ export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 
 # Default programs
 #export BROWSER="brave"
-export EDITOR="vim"
+export EDITOR="nvim"
 
 # Load the shell configs
 case "$SHELL" in
     *bash) [[ -f "$BASHDIR/bashrc" ]] && . "$BASHDIR/bashrc" ;;
-    *zsh) [[ -f "$ZDOTDIR/zshrc" ]] && . "$ZDOTDIR/zshrc" ;;
+    *zsh) [[ -f "$ZDOTDIR/.zshrc" ]] && . "$ZDOTDIR/.zshrc" ;;
 esac
 
 # Export XDG environmental variables from '~/.config/user-dirs.dirs'
