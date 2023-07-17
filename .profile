@@ -17,14 +17,14 @@ export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export TEXMFHOME="${XDG_DATA_DIR:-$HOME/.local/share}/texmf"
 export TEXMFVAR="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/var"
 export TEXMFCONFIG="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/config"
-#export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
+export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
 export LESSHISTFILE="-"
 
 # Password store
 export PASSWORD_STORE_DIR="${XDG_DATA_HOME:-$HOME/.local/share}/password-store"
 
 # Default programs
-#export BROWSER="brave"
+export BROWSER="brave"
 export EDITOR="nvim"
 
 # Load the shell configs
