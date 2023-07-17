@@ -5,7 +5,7 @@
 # Sets p all aliases for the current shell
 
 # Use neovim for vim if present.
-command -v nvim > /dev/null && alias vim="nvim -d"
+command -v nvim > /dev/null && alias vim="nvim"
 
 # Custom git log commands
 alias graph='git log --all --decorate --oneline --graph --max-count=10'
