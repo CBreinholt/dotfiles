@@ -5,7 +5,7 @@
 # Sets p all aliases for the current shell
 
 # Use neovim for vim if present.
-command -v nvim > /dev/null && alias vim="nvim"
+command -v nvim > /dev/null && alias vim="nvim -d"
 
 # Custom git log commands
 alias graph='git log --all --decorate --oneline --graph --max-count=10'
@@ -15,10 +15,10 @@ alias graphL='git log --all --decorate --oneline --graph'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/source/repos/dotfiles.git/ --work-tree=$HOME'
 
 # For opening a browser window
-alias brave='/usr/bin/brave > /dev/null 2>&1 & disown'
+#alias brave='/usr/bin/brave > /dev/null 2>&1 & disown'
 
 # Use custom ssh config
-alias ssh='ssh -F ~/.config/ssh/config'
+alias ssh='ssh -F /home/christopher/.config/ssh/config'
 
 # Avoid ~/.wget-hsts file creation in home folder
 alias wget='wget --hsts-file=~/.config/wget/.wget-hsts'
