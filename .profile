@@ -2,10 +2,15 @@
 # ~/.profile
 #
 # User environment paths, variables, and configurations
-#umask 0022;
+umask 0022;
 
 # Add `~/.local/bin` to $PATH if it's not already there
 [[ -z $(echo $PATH | grep $HOME/.local/bin) ]] && export PATH="${PATH}:$HOME/.local/bin/"
+
+# Add texlive to PATH, MANPATH and INFOPATH
+PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH; export PATH 
+MANPATH=/usr/local/texlive/2023/texmf-dist/doc/man:$MANPATH; export MANPATH 
+INFOPATH=/usr/local/texlive/2023/texmf-dist/doc/info:$INFOPATH; export INFOPATH
 
 # Folder locations
 export DOTDIR="${XDG_DESKTOP_DIR:-$HOME}/source/repos/dotfiles.git"
@@ -17,7 +22,7 @@ export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export TEXMFHOME="${XDG_DATA_DIR:-$HOME/.local/share}/texmf"
 export TEXMFVAR="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/var"
 export TEXMFCONFIG="${XDG_DATA_DIR:-$HOME/.local/share}/texmf/config"
-export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
+#export TEXINPUTS={"${XDG_DATA_DIR:-$HOME/.local/share}/texmf",:.}
 export LESSHISTFILE="-"
 
 # Password store
