@@ -37,6 +37,7 @@ zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 # Uncomment the following line to change how often to auto-update (in days).
 zstyle ':omz:update' frequency 7
 
+
 # Plugins
 #
 # Which plugins would you like to load?
@@ -51,11 +52,16 @@ source "$ZSH/oh-my-zsh.sh"
 export ZSHZ_DATA="$ZSH/cache/.z"
 
 # Basic auto/tab complete:
-autoload -U compinit
+autoload -U +X compinit && compinit
 zstyle ':completion:*' menu select
 zmodload zsh/complist
-compinit
 _comp_options+=(globdots)  # Include hidden files.
+
+# Enable bashcompletion
+autoload -U +X bashcompinit && bashcompinit
+
+# Enable pandoc completion
+eval "$(pandoc --bash-completion)"
 
 # vi mode
 bindkey -v
