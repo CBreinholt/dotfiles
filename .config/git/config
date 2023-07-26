@@ -1,0 +1,16 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[user]
+	email = cmbreinholt@gmail.com
+	name = CBreinholt
+[init]
+	defaultBranch = main
+[core]
+	autocrlf = input
+	whitespace = -space-before-tab,-indent-with-non-tab,tab-in-indent,cr-at-eol
+[pull]
+	rebase = false
