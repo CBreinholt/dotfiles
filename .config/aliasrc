@@ -8,8 +8,8 @@
 command -v nvim > /dev/null && alias vim="nvim -d"
 
 # Custom git log commands
-alias graph='git log --all --decorate --oneline --graph --max-count=10'
-alias graphL='git log --all --decorate --oneline --graph'
+#alias graph='git log --all --decorate --oneline --graph --max-count=10'
+alias graph='git log --all --decorate --oneline --graph'
 
 # For managing dotfiles git repo
 alias dotfiles='/usr/bin/git --git-dir=$HOME/source/repos/dotfiles.git/ --work-tree=$HOME'
