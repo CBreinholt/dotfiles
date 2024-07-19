@@ -26,8 +26,11 @@ else
   export EDITOR='nvim'
 fi
 
+# User home directory in Windows (~w).
+hash -d w=/c/Users/Christopher
+
 # Setup oh-my-posh shell
-eval "$(oh-my-posh init zsh --config /c/Users/Christopher/Documents/PowerShell/nord_1.omp.json)"
+eval "$(oh-my-posh init zsh --config ~w/Documents/PowerShell/nord_1.omp.json)"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
@@ -100,3 +103,17 @@ bindkey '^[[P' delete-char
 autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
+# This function trims the path to the bottom three directories
+function trim_path() {
+  echo $(pwd | awk -F/ '{
+    if (NF>3)
+      print "..."$(NF-2)"/"$(NF-1)"/"$NF
+    else
+      print $0
+  }')
+}
+
+# prompt_context() {
+#   "$(trim_path) % "
+# }
+# PROMPT='$(trim_path) % '
