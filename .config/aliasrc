@@ -2,7 +2,7 @@
 #
 # ~/.config/aliasrc
 #
-# Sets p all aliases for the current shell
+# Sets all aliases for the current shell
 
 # Use neovim for vim if present.
 command -v nvim > /dev/null && alias vim="nvim -d"
