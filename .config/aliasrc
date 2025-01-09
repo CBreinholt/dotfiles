@@ -7,6 +7,9 @@
 # Use neovim for vim if present.
 command -v nvim > /dev/null && alias vim="nvim -d"
 
+# Tmux aliases
+alias workspace='tmux attach -t workspace'
+
 # Custom git log commands
 #alias graph='git log --all --decorate --oneline --graph --max-count=10'
 alias graph='git log --all --decorate --oneline --graph'
