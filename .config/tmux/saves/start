@@ -1,0 +1,4 @@
+pane	main	1	1	:*	1	zsh in christopher	:/home/christopher	1	zsh	:
+pane	main	1	1	:*	2	zsh in christopher	:/home/christopher	0	zsh	:
+window	main	1	:home	1	:*	07a6,235x25,0,0{117x25,0,0,0,117x25,118,0,1}	off
+state	main	
